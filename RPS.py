@@ -97,7 +97,7 @@ def login_success():
 
     while True:
         event, values = window.read()
-        cpu_num = random.randrange(2)
+        cpu_num = random.randint(0, 2)
         if event == pg.WIN_CLOSED:
             break
         if cpu_num == 0:
